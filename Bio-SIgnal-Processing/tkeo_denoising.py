@@ -45,7 +45,7 @@ plt.plot(emg_time,emg/np.max(emg))
 plt.plot(emg_time,filt_emg/np.max(filt_emg))
 plt.xlabel("Time (s")
 plt.ylabel("Gain")
-plt.legend("Original","Filtered")
+plt.legend(["Original","Filtered"])
 plt.figure()
 
 #To be able to correctly compare the two signals, we need to calculate their z score
@@ -64,7 +64,7 @@ plt.plot(emg_time,zscore_orig)
 plt.plot(emg_time,zscore_filt)
 plt.xlabel("Time (s")
 plt.ylabel("Gain")
-plt.legend("Original","Filtered")
+plt.legend(["Original","Filtered"])
 plt.show()
 
     
